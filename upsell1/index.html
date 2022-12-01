@@ -124,19 +124,19 @@
 
             <!-- CÓDIGO DA KIWIFY -->
 
-           <script type="text/javascript">
-  function importHotmart(){ 
-    var imported = document.createElement('script'); 
-    imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
-    document.head.appendChild(imported); 
-    var link = document.createElement('link'); 
-    link.rel = 'stylesheet'; 
-    link.type = 'text/css'; 
-    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
-    document.head.appendChild(link);  } 
-  importHotmart(); 
- </script> 
- <a onclick="return false;" href="https://pay.hotmart.com/O76280557G?checkoutMode=2" class="hotmart-fb hotmart__button-checkout"><img src='https://static.hotmart.com/img/btn-buy-green.png'></a> 
+         <!-- HOTMART - Upsell Widget -->
+<div id="box_hotmart"></div>
+<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+<script>
+opts = {
+key: 'USL-84526-241764-70290e4bdedc27ded86b1e6696e456ac',
+width: '650' ,
+height: '420'
+};
+Upsell.Widget.show(opts);
+</script>
+<!-- HOTMART - Upsell Widget [end] -->
 
             <!-- CÓDIGO DA KIWIFY -->
 
